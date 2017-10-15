@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	td{
+		width: 80px;
+		height: 80px;
+		border: 1px solid black;
+		text-align: center;
+	}
+
+	table{
+		border: 1px solid black;
+	}
+	input{
+		width: 65px;
+		height: 65px;
+	}
+	.result{
+		border:0px solid black;
+	}
+	.result2{
+		text-align: right;
+		font-size: 20px;
+	}
+	</style>
+	<script type="text/javascript" src="demo.js" ></script>
+</head>
+<body>
+<form name="myform">
+	<table cellspacing="5px" cellpadding="5px;">
+		<tr>
+			<td colspan="3" class="result2" id="result"></td>
+
+			<td><input type="button" value="c" id="c" onclick="clearData();"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="1" value="1" onclick="showData(1);"></td>
+			<td><input type="button" id="2" value="2" onclick="showData(2);"></td>
+			<td><input type="button" id="3" value="3" onclick="showData(3);"></td>
+			<td><input type="button" id="+" value="+" onclick="showData('+');"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="4" value="4" onclick="showData(4);"></td>
+			<td><input type="button" id="5" value="5" onclick="showData(5);"></td>
+			<td><input type="button" id="6" value="6" onclick="showData(6);"></td>
+			<td><input type="button" id="-" value="-" onclick="showData('-');"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="7" value="7" onclick="showData(7);"></td>
+			<td><input type="button" id="8" value="8" onclick="showData(8);"></td>
+			<td><input type="button" id="9" value="9" onclick="showData(9);"></td>
+			<td><input type="button" id="*" value="*" onclick="showData('*');"></td>
+		</tr>
+		<tr>
+			<td><input type="button" id="0" value="0" onclick="showData(0);"></td>
+			<td><input type="button" id="." value="." onclick="showData('.');"></td>
+			<td><input type="button" id="=" value="=" onclick="caculate();"></td>
+			<td><input type="button" id="/" value="/" onclick="showData('/');"></td>
+		</tr>
+
+	</table>
+</form>
+</body>
+</html>

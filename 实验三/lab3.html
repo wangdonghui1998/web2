@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>评论</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	.title{
+		background-image:url('images/bg.jpg');
+		width: 500px;
+	}
+	#text{
+		height: 250px;
+		width: 500px;
+	}
+	#comment{
+		float: left;
+		position: absolute;
+		left: 455px;
+		top:345px;
+
+	</style>
+
+	<script type="text/javascript" src="lab3.js"></script>
+</head>
+<body>
+	<div class="title">宝贝与描述相符（打分匿名）</div><br/>
+	<div id="star"><img src="images/star0.png" onmouseover ="starPic(1)" onmouseout="hide(1)" onclick="qd(1)">&nbsp;<img src="images/star0.png" onmouseover="starPic(2)" onmouseout="hide(2)" onclick="qd(2)">&nbsp;<img src="images/star0.png" onmouseover="starPic(3)" onmouseout="hide(3)" onclick="qd(3)">&nbsp;<img src="images/star0.png" onmouseover="starPic(4)" onmouseout="hide(4)" onclick="qd(4)">&nbsp;<img src="images/star0.png" onmouseover="starPic(5)" onmouseout="hide(5)" onclick="qd(5)"></div>	
+	<br/>
+	<textarea cols="75" rows="16" id="word"></textarea>
+	<form>		
+		<input type="submit" value="公开评论" id="comment">
+	</form>
+
+</body>
+</html>

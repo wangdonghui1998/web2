@@ -1,0 +1,16 @@
+#picScroll{
+	margin: 0 auto;
+	white-space:nowrap;
+	overflow: hidden;
+	width: 600px;
+	height: 200px;
+}
+body{
+	text-align: center;
+}
+img{
+	width:200px;
+	height: 200px;
+	margin-left: 5px;
+	border: 1px solid #C90;
+}

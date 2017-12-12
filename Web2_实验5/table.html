@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+		.border{
+			border: 1px solid highlight;
+		}
+	</style>	
+</head>
+<body>
+	<table width="1000px" border="1" id="TABLE" onmouseover="gao()">
+		<tr height="30px" id="TR">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="add()" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="shan()" />
+
+	<script type="text/javascript">
+		function add(){
+			var bg=document.createElement("tr");
+			var table=document.getElementById("TABLE");
+			table.appendChild(bg);
+			for(var i=0;i<12;i++)
+			{
+				var dyg=document.createElement("td");	
+				bg.appendChild(dyg);
+
+			}
+		}
+		
+		function shan(){
+			var bg=document.getElementById("TABLE").lastChild;
+			bg.parentNode.removeChild(bg);
+		}
+
+		function gao(){
+			var row=document.getElementsByTagName("tr");
+			for(var i=0;i<row.length;i++)
+			{
+				row[i].onmouseover=function(){
+					this.className="border";
+				}
+				row[i].onmouseout=function(){
+					this.className="";
+				}
+
+			}
+		}
+	</script>
+</body>
+
+</html>

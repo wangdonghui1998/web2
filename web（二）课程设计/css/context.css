@@ -1,0 +1,64 @@
+		* {
+		font-size:20px;
+		margin:0px;
+		padding:0px;
+		}
+		#daohang{
+		list-style:none;
+		line-height:50px;
+		}
+		#daohang a:link,#daohang a:visited{
+		display:block;
+		width:182.5px;
+		color: gray;
+		text-align:center;
+		text-decoration:none;
+		background:black;
+		}
+		#daohang a:hover{
+		color: #FFF;
+		text-decoration: underline;
+		font-weight: bold;
+		background:#999;
+		opacity: 0.7;
+		}
+		#daohang ul{list-style: none;}
+		#daohang li{
+		float:left;
+		width: 182.5px;
+		}
+		#daohang li ul li a:hover{
+		background:#FFD700;
+		color:gray;
+		}
+
+		#daohang li ul{
+		display:none;
+		}
+		#bg{
+			background-color: black;
+			width: 1280px;
+			height: 365px;
+			opacity: 0.5;
+			position: relative;
+			top: 250px;
+		}
+		#picScroll{
+			margin: 0 auto;
+			white-space:nowrap;
+			overflow: hidden;
+			width: 800px;
+			height: 200px;
+			float: left;
+			position: relative;
+			left: 250px;
+		}
+		body{
+			text-align: center;
+		}
+		img{
+			width:200px;
+			height: 200px;
+			margin-left: 5px;
+			border: 1px solid #C90;
+		}

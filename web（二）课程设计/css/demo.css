@@ -1,0 +1,35 @@
+.biaodan{
+	width: 300px;
+	height: 40px;
+}
+#denglu{
+	width: 60px;
+	height: 30px;
+}
+#zhuce{
+	width: 60px;
+	height: 30px;
+}
+.red{
+	color:red;
+}
+.gray{
+	float: left;
+	position: relative;
+	top: 150px;
+	left: -10px;
+	width: 600px;
+	height: 350px;
+	background-color: black;
+	opacity: 0.7;
+}
+.name{
+	float: left;
+	position:relative;
+	left: -500px;
+	top: 250px;
+	height: 250px;
+	width: 500px;
+	color:white;
+}
+
